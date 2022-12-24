@@ -1,0 +1,882 @@
+*{
+    margin: 0rem;
+    padding: 0rem;
+    box-sizing: border-box;
+}
+*::selection{
+    background-color: #20C997;
+    color: white;
+}
+html ,body{
+    scroll-behavior: smooth;
+}
+.container{
+    margin:auto;
+    width:90%;
+}
+/* Home Start */
+.home{
+    background-image: url('../images/intro-bg.jpg');
+    background-size: 100% 100%;
+    height: 100vh;
+    position: relative;
+    margin-bottom:3rem ;
+}
+.home .settings{
+    background-color:#555555;
+    color: white;
+    width: 40px;
+    padding: 10px;
+    border-radius: 10%;
+    position: fixed;
+    right: 0;
+    top: 35%;
+}
+.home .settings:hover{
+    color: #20C796;
+}
+.layer{
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.7);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.navbar{
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 10px;
+}
+
+.navbar .nav-logo img{
+   width: 100%;
+}
+.navbar .nav-links ul{
+    display: flex;
+}
+.navbar .nav-links ul li{
+    padding: 0px 20px;
+    list-style: none;
+}
+.navbar .nav-links ul li a{
+    text-decoration: none;
+    color: white;
+}
+.navbar .nav-links ul li a span{
+    color: #20C796;
+}
+.navbar .nav-links ul li a:hover{
+    color: #20C796;
+}
+.navbar .nav-icons{
+    color: white;
+}
+.navbar .nav-icons i{
+    padding: 0px 10px;
+}
+.navbar .nav-icons .twit:hover{
+    color: #00ACEE;
+}
+.navbar .nav-icons .face:hover{
+    color: #3B5998;
+}
+.navbar .nav-icons .ball:hover{
+    color: #E43E4E;
+}
+.home .home-content{
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap:wrap;
+height: 100%;
+}
+.home .home-content .content-box{
+    text-align: center;
+    color: white;
+}
+.home .home-content .content-box h3{
+    margin: 30px;
+    font-size: 1.7rem;
+
+}
+.home .home-content .content-box h1{
+    margin: 15px;
+    font-size: 3.5em;
+}
+.home .home-content .content-box h1::after{
+    content: "I'm";
+    animation: 10s typing infinite;
+
+}
+@keyframes typing {
+0%{
+    content: "I'm"
+
+    }
+2.5%{
+    content: "I'm S|"
+    }
+5%{
+    content: "I'm Si|"
+
+    }
+7.5%{
+    content: "I'm Sim|"
+
+    }
+10%{
+    content: "I'm Simo|"
+    }
+12.5%{
+    content: "I'm Simon|"
+    }
+15%{
+    content: "I'm Simone|"
+    }
+17.5%{
+    content: "I'm Simone O|"
+    }
+20%{
+    content: "I'm Simone Ol|"
+    }
+22.5%{
+    content: "I'm Simone Oli|"
+    }
+25%{
+    content: "I'm Simone Oliv|"
+    }
+27.5%{
+    content: "I'm Simone Olivi|"
+    }
+30%{
+    content: "I'm Simone Olivia|"
+    }
+32.5%{
+        content: "I'm Simone Olivi|"
+    
+        }
+    35%{
+        content: "I'm Simone Oliv|"
+        }
+    37.5%{
+        content: "I'm Simone Oli|"
+    
+        }
+    40%{
+        content: "I'm Simone Ol|"
+    
+        }
+    42.5%{
+        content: "I'm Simone O|"
+        }
+    45%{
+        content: "II'm Simone|"
+        }
+    47.5%{
+        content: "I'm Simon|"
+        }
+    50%{
+        content: "I'm Simo|"
+        }
+    52.5%{
+        content: "I'm Sim|"
+        }
+    55%{
+        content: "I'm Si|"
+        }
+    57.5%{
+        content: "I'm|"
+        }
+        60%{
+            content: "I'm"
+        
+            }
+        62.5%{
+            content: "I'm a|"
+            }
+        67.5%{
+            content: "I'm a F|"
+        
+            }
+        70%{
+            content: "I'm a Fr|"
+            }
+        72.5%{
+            content: "I'm a Fre|"
+            }
+        75%{
+            content: "I'm a Free|"
+            }
+        77.5%{
+            content: "I'm a Freel|"
+            }
+        80%{
+            content: "I'm a Freela|"
+            }
+        82.5%{
+            content: "I'm a Freelan|"
+            }
+        85%{
+            content: "I'm a Freelanc|"
+            }
+         87.5%{
+                content: "I'm a Freelance|"
+             }
+        90%{
+                content: "I'm a Freelancer|"
+             } 
+        92.5%{
+             content: "I'm a Freelancer.|"
+        
+            } 
+            95%{
+                content: "I'm a Freelancer|"
+                }
+            97.5%{
+                content: "I'm a Freelance|"
+                }
+             100%{
+                    content: "I'm a Freelanc|"
+                    }
+
+
+}
+.home .home-content .content-box p{
+    font-size: 1.4rem;
+    margin: 15px;
+
+}
+.home .home-content .content-box button{
+    padding: 10px 25px;
+    margin: 15px;
+    border-radius: 20px;
+    font-size: 17px;
+    background-color: transparent;
+    border: 1px solid #20C796;
+    color: #20C796;
+    transition: 1s all;
+}
+.home .home-content .content-box button:hover{
+    color: white;
+    background-color: #20C796;
+}
+/* Home End */
+
+/* About Start */
+.about-flex{
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.about .about-flex .about-title{
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0rem;
+    position: relative;
+}
+.about .about-flex .about-title .disapeared-title{
+   color: #F2F4F4;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.about .about-flex .about-title .appeared-title{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 40%;
+   left: 40%;
+
+}
+.about .about-flex .about-title .disapeared-title::selection{
+    background-color: #A6E9D5;
+    color: white;
+}
+.about .about-flex .about-title .appeared-title::selection{
+background-color: #20C997;
+color: white;
+}
+.about .about-flex .about-info{
+    width: 65%;
+    padding:2rem;
+}
+.about .about-flex .about-data{
+    width: 35%;
+    padding:2rem;
+    
+
+}
+.about .about-flex .about-info h3{
+font-size: 1.8rem;
+margin-bottom: 1.5rem;
+}
+
+.about .about-flex .about-info h3 span{
+color: #20C997;
+}
+.about .about-flex .about-info p{
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #4C4D4D;
+    line-height: 2rem;
+
+}
+.about .about-flex .about-data ul li{
+    list-style: none;
+    margin: 1rem 0rem;
+}
+.about .about-flex .about-data ul li span{
+font-weight: bold;
+color: #4C4D4D;
+}
+.about .about-flex .about-data ul li a{
+color: #20C796;
+text-decoration: none;
+}
+.about .about-flex .about-data ul li{
+    list-style: none;
+    font-size: 1.1rem;
+    color: #4C4D4D;
+}
+.about .about-flex .about-data ul hr{
+    opacity: .3;
+}
+.about .about-flex .about-data .btn{
+    background-color:#20C997;
+    padding: .8rem 2.6rem;
+    color: white;
+    border-radius: 5rem;
+    border: transparent;
+    font-size: 1.1rem;
+    margin: 1rem 0rem;
+}
+.about .about-flex .about-data .btn:hover{
+    box-shadow: 1rem 1rem 1rem;
+    background-color: #1BAA80;
+}
+
+.about .about-flex .about-numbers{
+    display: flex;
+    width:80%;
+    margin: auto;
+    justify-content: space-between;
+    text-align: center;
+   
+}
+.about .about-flex .about-numbers .items h2 {
+    font-size: 3rem;
+    color: #6C757D;
+    margin-bottom: 5px;
+
+}
+.about .about-flex .about-numbers .items p {
+    font-size: 1.1rem;
+
+}
+/* About End */
+/* What I do    Start */
+.what{
+    margin: 3rem 0rem;
+    background-color: #F8F9FA;
+}
+.what .what-flex{
+    display: flex;
+    flex-wrap: wrap
+}
+.what .what-title{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.what .what-title .disapeared-title{
+    color: #F2F4F4;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.what .what-title .appeared-title{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 2.2rem;
+
+}
+.what .what-title .disapeared-title::selection{
+    background-color: #A6E9D5;
+    color: white;
+}
+.what .what-title .appeared-title::selection{
+    background-color: #20C997;
+color: white;
+}
+.what .what-flex .what-list{
+    display: flex;
+}
+.what .what-flex .what-list ul li {
+    padding: 2rem;
+   
+}
+.what .what-flex .what-list ul li span{
+    background-color: white;
+    width: fit-content;
+ 
+    border-radius: .5rem;
+  
+
+
+}
+.what .what-flex .what-list ul li h2,.what .what-flex .what-list ul li p{
+    margin-left: 2rem;
+}
+.what .what-flex .what-list ul li h2{
+   padding-bottom: .9rem;
+}
+.what-flex .what-list ul li p{
+    font-size: 1.1rem;
+    line-height: 2rem;
+
+}
+.what .what-flex .what-list ul li span i{
+    color: #20C997;
+    padding: 2rem 1.5rem;
+   
+}
+.what .what-flex .what-list .skills-left
+/* Resume Start*/
+.resume{
+    margin: 3rem 0rem;
+}
+.resume .resume-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.resume .resume-title{
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+.resume .resume-title .disapeared-title{
+    color: #F2F4F4;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.resume .resume-title .appeared-title{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    font-size: 2.2rem;
+
+}
+.resume .resume-title .disapeared-title::selection{
+    background-color: #A6E9D5;
+    color: white;
+}
+.resume .resume-title .appeared-title::selection{
+    background-color: #20C997;
+color: white;
+}
+.resume .resume-flex .education ,.resume .resume-flex .experience
+{
+   width: 50%;
+   padding: 2rem;
+
+}
+.resume .resume-flex .education .education-info ,.resume .resume-flex .experience .experience-info{
+    padding: 1.5rem;
+    border: 1px solid #DEE2E6;
+    margin: 1.5rem 0rem;
+    border-radius: .5rem;
+}
+.resume .resume-flex .education .education-info .first ,.resume .resume-flex .experience .experience-info .first{
+    background-color: #20C997;
+    width: fit-content;
+    padding:.2rem .5rem;
+    border-radius: .5rem;
+    color: white;
+    margin: 1rem 0rem;
+
+}
+.resume .resume-flex .education .education-info .second ,.resume .resume-flex .experience .experience-info .second{
+color: #DC3545;
+margin: 1rem 0rem;
+font-size: 1.1rem;
+}
+.resume .resume-flex .education .education-info h3 ,.resume .resume-flex .experience .experience-info h3{
+font-size: 1.5rem;
+margin: 1rem 0rem;
+
+}
+.resume .resume-flex .education .education-info .third  ,.resume .resume-flex .experience .experience-info .third {
+    line-height: 2rem;}
+
+.resume .resume-flex .btn{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+ }
+    
+.resume .resume-flex button{
+    padding: .7rem 1.8rem;
+    font-size: 1.1rem;
+    background-color: transparent;
+    border-radius: 5rem;
+    border: 1px solid #6C757D;
+    color: #6C757D;
+    transition: 1s all;
+    
+   
+}
+.resume .resume-flex button i{
+    padding: .2rem;
+}
+.resume .resume-flex button:hover{
+    background-color:#6C757D;
+    color: white;
+}
+/* Resume End*/
+/* portfolio Start */
+
+.Portfolio{
+    margin: 3rem 0rem;
+}
+.Portfolio .portfolio-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Portfolio .Portfolio-flex .Portfolio-title{
+    width: 100%;
+    text-align: center;
+    position: relative;
+
+}
+.Portfolio .Portfolio-flex .Portfolio-title .disapeared-title{
+    color: #F2F4F4;
+    font-size: 7rem;
+    text-transform: uppercase;
+}
+.Portfolio .Portfolio-flex .Portfolio-title .appeared-title{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 40%;
+    left: 45%; 
+}
+.Portfolio .Portfolio-flex .Portfolio-title .disapeared-title::selection{
+background-color: #A6E9D5;
+}
+.Portfolio .Portfolio-flex .portfolio-list{
+    width: 100%;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+.Portfolio .Portfolio-flex .portfolio-list ul{
+    display: flex;
+   justify-content: center;
+
+}
+.Portfolio .Portfolio-flex .portfolio-list ul li{
+    list-style: none;
+    margin: 1rem;
+    font-size: 1.1rem;
+    transition: 1s all;
+
+}
+.Portfolio .Portfolio-flex .portfolio-list ul li span{
+    color: #20C9A0;
+}
+.Portfolio .Portfolio-flex .portfolio-list ul li:hover{
+    color: #20C9A0;
+}
+.portofolio-designs{
+    width: 100%;
+    display: flex;
+}
+.portofolio-designs .images-column{
+    width: 33.3333%;
+}
+.image-padding{
+    padding: 1rem;
+    
+}
+.image-box{
+    position: relative;
+    overflow: hidden;
+}
+.image-box img{
+    width: 100%;
+   border-radius: 1rem;
+}
+.image-layer{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    opacity: 0;
+    transition: 1s all;
+    border-radius: 1rem;
+
+
+}
+.image-layer h3{
+    margin: .8rem;
+   
+}
+.image-layer p{
+    font-size: 1.1rem;
+}
+.image-padding:hover .image-layer{
+    opacity: 1;
+}
+
+
+/* portfolio End */
+
+/* Client Start */
+.client{
+    margin: 3rem 0rem;
+}
+.client .client-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.client .client-flex .client-title{
+width: 100%;
+text-align: center;
+position: relative;
+margin: 3rem 0rem;
+}
+.client .client-flex .client-title .disapeared-title{
+font-size: 7rem;
+color:#F2F4F4;
+text-transform: uppercase;
+}
+.client .client-flex .client-title .appeared-title{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+   
+}
+.client-info{
+    width: 100%;
+    display: flex;
+    margin: 3rem 0rem;
+}    
+.client-info .client-data ul{
+    display: flex;
+}
+
+.client-info .client-data ul li{
+    list-style: none;
+    padding: .5rem;
+   
+}
+.client-info .client-data ul .li-data{
+    margin-top:1rem ;
+}
+.client-info .client-data ul li img{
+border-radius: 50%;
+}
+.client-info .client-data ul li h4{
+ 
+    font-size: 1.2rem;
+}
+.client-info .client-data ul .li-data p{
+    font-weight: bold;
+    color: #6C757D;
+}
+.client-info .client-data{
+    background-color: #F8F9FA;
+    padding: 2rem;
+    margin: 1rem;
+    line-height: 2rem;
+    border-radius: 1rem;
+}
+.client-info .client-data .client-opinion{
+    font-size: 1.1rem;
+}
+.client-info .client-data .star{
+    color: #FFC107;
+    margin: 1.8rem 0rem;
+}
+.client .client-flex .radio{
+    width: 100%;
+    text-align: center;
+}
+.client .client-flex .radio .one{
+color: #1BAA80;
+}
+/* Client End */
+
+/* Contact Start */
+.contact{
+    margin: 3rem 0rem;
+    background-color: #F8F9FA;
+}
+.contact .contact-flex{
+    display: flex;
+    flex-wrap: wrap;
+}
+.contact .contact-flex .contact-title{
+width: 100%;
+text-align: center;
+position: relative;
+margin: 3rem 0rem;
+}
+.contact .contact-flex .contact-title .disapeared-title{
+font-size: 7rem;
+color:#EEF0F1;
+text-transform: uppercase;
+}
+.contact .contact-flex .contact-title .appeared-title{
+    font-size: 2.2rem;
+    position: absolute;
+    top: 40%;
+    left: 45%;
+   
+}
+.contact .contact-flex .address{
+        width: 30%;
+        line-height: 2rem;
+}
+.contact .contact-flex .address.address-top{
+    margin: 1rem ; 
+}
+.contact .contact-flex .address .address-top h3{
+color:#252B33;
+font-size: 1.5rem;
+margin: 1rem 0rem;
+}
+.contact .contact-flex .address .address-top p{
+    color:#626563 ;
+    font-size: 1.1rem;
+}
+.contact .contact-flex .address .address-bottom{
+    margin: 1rem 0rem ;
+}
+.contact .contact-flex .address .address-bottom ul li{
+    color:#626563 ;
+    font-size: 1.1rem;
+    padding: .3rem;
+}
+.contact .contact-flex .address .address-bottom ul li i{
+    color: #20C997;
+    
+}
+.contact .contact-flex .address .address-bottom h2{
+    padding: .5rem 1rem;
+
+}
+.contact .contact-flex .address .address-bottom .contact-icons i{
+    color:#495668;
+    padding: .5rem;
+}
+.contact .contact-flex .address .address-bottom .contact-icons .eins:hover{
+    color: #EA88C7;
+}
+.contact .contact-flex .address .address-bottom .contact-icons .zwei:hover{
+    color: #00ACEE;
+}
+.contact .contact-flex .address .address-bottom .contact-icons .drei:hover{
+    color: #3B5998;
+}
+.contact .contact-flex .address .address-bottom .contact-icons .vier:hover{
+    color: #DD4B39;
+}
+.contact .contact-flex .address .address-bottom .contact-icons .funf:hover{
+    color: #333333;
+}
+.contact .contact-flex .contact-box{
+    width: 70%;
+    padding: 3rem;
+}
+.contact-box .top-box .contact-text{
+    width: 100%;
+    margin: 1rem 0rem;
+}
+
+.contact-box .top-box .contact-text .note{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+.contact-box .top-box{
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.contact-box .top-box .content{
+    width: 50%;
+    padding-right: .8rem;
+
+}
+.contact-box .top-box .content input{
+    width: 100%;
+    padding: 1rem 0rem;
+    padding-left: 1rem;
+    font-size: 1.1rem;
+    border-radius: .5rem;
+    border: 2px solid #EBEFF0;
+    
+  
+}
+.contact-box .bottom-box{
+    width: 100%;
+    display: flex;
+}
+.contact-box .bottom-box .text-area{
+    width: 100%;
+    margin: 1rem 0rem;
+    
+}
+.contact-box .bottom-box .text-area textarea{
+        width: 100%;
+        font-size: 1.1rem;
+    border-radius: .5rem;
+    border: 2px solid #EBEFF0;
+    padding-bottom: 6rem;
+    padding-left: 1rem;
+    padding-top:1rem ;
+
+
+}
+.contact-box .contact-btn{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    
+    
+}
+.contact-box .contact-btn button{
+    background-color: #25B48A;
+    padding: 1rem 3rem;
+    border-radius: 5rem;
+    color: white;
+    border-style: none;
+    font-size: 1.1rem;
+    transition: 1s all;
+
+}
+.contact-box .contact-btn button:hover{
+    background-color: #1BAA80;
+}
+.footer{
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.1rem;
+    padding: 3rem;
+}
+.footer .simone{
+    color: #1BAA80;
+}
+.footer .footer-hover span:hover{
+    color: #1BAA80;
+}
+/* Contact End */
+
